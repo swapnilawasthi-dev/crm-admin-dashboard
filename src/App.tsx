@@ -18,6 +18,7 @@ import { createClient } from "graphql-ws";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 import { dataProvider, liveProvider } from "./providers";
+import { authProvider } from "./providers/auth";
 
 
 function App() {
@@ -32,7 +33,7 @@ function App() {
                 liveProvider={liveProvider}
                 notificationProvider={useNotificationProvider}
                 routerProvider={routerBindings}
-                // authProvider={}
+                authProvider={authProvider}
                 options={{
                   syncWithLocation: true,
                   warnWhenUnsavedChanges: true,
