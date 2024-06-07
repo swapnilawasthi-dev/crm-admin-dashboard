@@ -46,6 +46,7 @@ function App() {
                   <Route index element={<WelcomePage />} />
                 </Routes>
                 <RefineKbar />
+                
                 <UnsavedChangesNotifier />
                 <DocumentTitleHandler />
               </Refine>
